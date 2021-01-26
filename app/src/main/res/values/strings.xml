@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">DataWedge Notify Sample</string>
+
+    <string-array name="NotifyOptions">
+        <item>None</item>
+
+        <item>Green LED On</item>
+        <item>Green LED Off</item>
+        <item>Red LED On</item>
+        <item>Red LED Off</item>
+
+        <item>1 High Short Beep</item>
+        <item>2 High Short Beeps</item>
+        <item>3 High Short Beeps</item>
+        <item>4 High Short Beeps</item>
+        <item>5 High Short Beeps</item>
+
+        <item>1 Low Short Beep</item>
+        <item>2 Low Short Beeps</item>
+        <item>3 Low Short Beeps</item>
+        <item>4 Low Short Beeps</item>
+        <item>5 Low Short Beeps</item>
+
+        <item>1 High Long Beep</item>
+        <item>2 High Long Beeps</item>
+        <item>3 High Long Beeps</item>
+        <item>4 High Long Beeps</item>
+        <item>5 High Long Beeps</item>
+
+        <item>1 Low Long Beep</item>
+        <item>2 Low Long Beeps</item>
+        <item>3 Low Long Beeps</item>
+        <item>4 Low Long Beeps</item>
+        <item>5 Low Long Beeps</item>
+
+        <item>Fast warble Beep</item>
+        <item>Slow warble Beep</item>
+        <item>High-low Beep</item>
+        <item>Low-high Beep</item>
+
+        <item>High-low-high Beep</item>
+        <item>Low-high-low Beep</item>
+        <item>High-high-low-low Beep</item>
+
+    </string-array>
+</resources>
