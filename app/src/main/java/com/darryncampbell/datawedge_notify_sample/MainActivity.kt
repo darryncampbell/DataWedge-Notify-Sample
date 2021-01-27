@@ -52,8 +52,8 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         val filter = IntentFilter()
-        filter.addAction(ACTION_RESULT_DATAWEDGE_FROM_6_2) //  DW 6.3 for notifications
-        filter.addCategory(Intent.CATEGORY_DEFAULT) //  NOTE: this IS REQUIRED for DW6.2 and up!
+        filter.addAction(ACTION_RESULT_DATAWEDGE_FROM_6_2)
+        filter.addCategory(Intent.CATEGORY_DEFAULT) //  NOTE: this IS REQUIRED for DW6.2
         registerReceiver(myBroadcastReceiver, filter)
     }
 
@@ -92,34 +92,33 @@ class MainActivity : AppCompatActivity() {
             if (notifyParam1 >= 0)
             {
                 notifyParams[count] = notifyParam1;
-                count++;
+                count++
             }
             if (notifyParam2 >= 0)
             {
                 notifyParams[count] = notifyParam2;
-                count++;
+                count++
             }
             if (notifyParam3 >= 0)
             {
                 notifyParams[count] = notifyParam3;
-                count++;
+                count++
             }
             if (notifyParam4 >= 0)
             {
                 notifyParams[count] = notifyParam4;
-                count++;
+                count++
             }
             if (notifyParam5 >= 0)
             {
                 notifyParams[count] = notifyParam5;
-                count++;
             }
 
             notify(notifyParams)
         }
     }
 
-    fun convertSpinnerValueToNotifyParam(spinnerValue: Int): Int {
+    private fun convertSpinnerValueToNotifyParam(spinnerValue: Int): Int {
         when(spinnerValue) {
             1 -> return 43
             2 -> return 42
@@ -156,7 +155,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun notify(notifyParams: IntArray)
+    private fun notify(notifyParams: IntArray)
     {
         val editDeviceId = findViewById<EditText>(R.id.editDeviceId)
         val deviceId: String = editDeviceId.text.toString()
@@ -172,14 +171,12 @@ class MainActivity : AppCompatActivity() {
         i.putExtra(NOTIFY_EXTRA, bundleNotify)
         i.putExtra(EXTRA_SEND_RESULT, "true")
         this.sendBroadcast(i)
-
     }
 
     private fun outputResult(result: String?, info: String)
     {
         val sdf = SimpleDateFormat("hh:mm:ss")
         val currentDate = sdf.format(Date())
-
         val resultsUi = findViewById<View>(R.id.txtIntentResultCode) as TextView
         resultsUi.text = "Time: $currentDate\n$result  $info"
     }
