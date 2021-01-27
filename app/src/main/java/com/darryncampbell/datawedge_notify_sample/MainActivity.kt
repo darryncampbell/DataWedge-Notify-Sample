@@ -75,41 +75,41 @@ class MainActivity : AppCompatActivity() {
         val notifyParam5 = convertSpinnerValueToNotifyParam(spinner5.selectedItemPosition)
         var arraySize = 0;
         var count = 0;
-        if (notifyParam1 > 0)
+        if (notifyParam1 >= 0)
             arraySize++;
-        if (notifyParam2 > 0)
+        if (notifyParam2 >= 0)
             arraySize++;
-        if (notifyParam3 > 0)
+        if (notifyParam3 >= 0)
             arraySize++;
-        if (notifyParam4 > 0)
+        if (notifyParam4 >= 0)
             arraySize++;
-        if (notifyParam5 > 0)
+        if (notifyParam5 >= 0)
             arraySize++;
 
         if (arraySize > 0)
         {
             val notifyParams = IntArray(arraySize)
-            if (notifyParam1 > 0)
+            if (notifyParam1 >= 0)
             {
                 notifyParams[count] = notifyParam1;
                 count++;
             }
-            if (notifyParam2 > 0)
+            if (notifyParam2 >= 0)
             {
                 notifyParams[count] = notifyParam2;
                 count++;
             }
-            if (notifyParam3 > 0)
+            if (notifyParam3 >= 0)
             {
                 notifyParams[count] = notifyParam3;
                 count++;
             }
-            if (notifyParam4 > 0)
+            if (notifyParam4 >= 0)
             {
                 notifyParams[count] = notifyParam4;
                 count++;
             }
-            if (notifyParam5 > 0)
+            if (notifyParam5 >= 0)
             {
                 notifyParams[count] = notifyParam5;
                 count++;

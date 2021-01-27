@@ -5,3 +5,5 @@ Sample showing how to use the DataWedge Notify API to communicate with the Bluet
 https://techdocs.zebra.com/datawedge/latest/guide/api/notify/
 
 https://techdocs.zebra.com/datawedge/latest/guide/api/setconfig/#scanneridentifiers
+
+https://youtu.be/9lAqXa-aLeA
